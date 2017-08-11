@@ -26,7 +26,8 @@ export class ManagedField extends React.Component {
     fieldDetails: PropTypes.string,
     tagType: PropTypes.string,
     inputPlaceholder: PropTypes.string,
-    tooltip: PropTypes.string
+    tooltip: PropTypes.string,
+    updateSideEffects: PropTypes.func
   };
 
   state = {
@@ -140,7 +141,8 @@ export class ManagedField extends React.Component {
         maxCharLength: this.props.maxCharLength,
         tagType: this.props.tagType,
         inputPlaceholder: this.props.inputPlaceholder,
-        tooltip: this.props.tooltip
+        tooltip: this.props.tooltip,
+        updateSideEffects: this.props.updateSideEffects
       });
     });
     return <div className={className}>{hydratedChildren}</div>;

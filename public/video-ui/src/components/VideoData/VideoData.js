@@ -106,6 +106,7 @@ class VideoData extends React.Component {
               formRowClass="form__row__byline"
               tagType={TagTypes.keyword}
               inputPlaceholder="Search keywords (type '*' to show all)"
+              updateSideEffects={this.props.composerKeywordsToYouTube}
             >
               <TagPicker disableTextInput />
             </ManagedField>
